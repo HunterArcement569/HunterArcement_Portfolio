@@ -1,0 +1,290 @@
+html
+{
+    scroll-behavior: smooth;
+}
+html, body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*styling for the navbar (same navbar for every page aside from home page being absolute)*/
+nav.navbar
+{
+    position: sticky;
+    background: linear-gradient(90deg, black, darkgreen);
+    width: 100%; /*take up the entire width of the window*/
+    height: 125px;
+    justify-content: space-between;
+    align-items: center; /*align on the center vertically*/
+    display: flex; /*make the content all align on the vertical*/
+    outline: none; /*remove the outline*/
+    z-index: 20;
+}
+a.navbarHeader
+{
+    font-family: "Times New Roman", serif;
+    font-size: 50px;
+    color: green; /*color of the text*/
+    margin-left: 25px;
+    margin-right: 25px;
+    text-decoration-line: none; /*remove the underline on the text*/
+    display: flex;
+}
+#ChannelLogo
+{
+    width: 110px;
+    height: 110px;
+    border-radius: 60%;
+    filter: brightness(300%);
+}
+#ChannelLogo:hover
+{
+    transform: scale(1.1);
+    filter: brightness(500%);
+    transition: 1s;
+}
+#ChannelName
+{
+    margin-left: 35px;
+    padding-top: 35px;
+}
+#ChannelName:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+button.navbarButton
+{
+    font-family: "Times New Roman", serif;
+    font-size: 25px;
+    background-color: darkgray; /*color of the background of the button*/
+    color: green; /*color of the text of the button*/
+    margin-left: 5px; /*space between buttons*/
+    margin-bottom: -10px; /*center the text on the vertical axis within the button*/
+    padding-top: 10px; /*slightly move the button down to make even with the navbar header text*/
+    padding-bottom: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+button.navbarButton:hover
+{
+    background-color: grey; /*color the background of the button transitions to*/
+    color: #004009; /*color the text of the button transitions to*/
+    transition-duration: 0.2s; /*length it takes for the hover transition to take over*/
+}
+.navbarButtons
+{
+    gap: 25px;
+    margin-right: 25px;
+}
+.dropdown
+{
+    position: relative;
+    justify-self: right;
+    display: inline-block;
+}
+
+/*styling for the footer (same footer for every page)*/
+footer.footer
+{
+    position: static;
+    background: linear-gradient(90deg, darkgreen, black);
+    width: 100%;
+    height: 125px;
+    align-items: center;
+    display: flex;
+    outline: none;
+    justify-items: center;
+}
+a.footerHomeLink
+{
+    margin-left: 50px;
+    text-decoration-line: underline;
+    color: white;
+}
+a.footerHomeLink:link
+{
+    text-decoration-line: underline;
+    color: white;
+}
+a.footerHomeLink:visited
+{
+    text-decoration-line: none;
+    color: white;
+}
+img.footerImage
+{
+    width: 75px;
+    height: 75px;
+    margin-left: 50px;
+    text-decoration-line: none;
+}
+#footerCopyright
+{
+    color: white;
+    margin-left: 50px;
+}
+
+/*styling for the about page*/
+.AboutMain
+{
+    margin: -40px 0 0 0;
+    background-color: #fefefe;
+    background-image: url('Images/backgroundTexture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Segments
+{
+    display: flow;
+    align-items: center;
+}
+.SegmentHeader
+{
+    justify-self: center;
+    color: black;
+    font-weight: bold;
+    font-size: 40pt;
+    font-family: Calibri, sans-serif;
+}
+.SegmentInformation
+{
+    justify-self: center;
+    text-align: center;
+    margin-left: 5em;
+    margin-right: 5em;
+    color: black;
+    font-weight: normal;
+    font-size: 20pt;
+    font-family: Calibri, sans-serif;
+}
+ol.SegmentInformation
+{
+    list-style: none;
+}
+.EmploymentDurationList
+{
+    list-style: none;
+}
+.EmploymentDuration
+{
+    list-style: none;
+    color: black;
+    font-weight: normal;
+    font-size: 15pt;
+    font-family: Calibri, sans-serif;
+}
+.ExternalLink:link
+{
+    text-decoration: underline;
+    color: black;
+}
+.ExternalLink:visited
+{
+    text-decoration: underline;
+    color: black;
+}
+
+/*styling for the projects page*/
+
+
+/*styling for the home page*/
+body.HomeBody
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+.HomeImageDiv
+{
+    background-image: url("Images/Hunter HS Grad Pic.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 100vh;
+    width: 496px;
+    flex-shrink: 0;
+}
+.HomeContentDiv
+{
+    height: 100vh;
+    flex: 1;
+    padding: 0;
+    overflow-y: auto;
+    justify-items: center;
+}
+.HomeHeader
+{
+    color: palegreen;
+    font-size: 50pt;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    justify-self: center;
+    transition-duration: 1s;
+}
+.HomeHeader:hover
+{
+    color: greenyellow;
+    transform: scale(1.3);
+}
+.HomeContentHeader
+{
+    color: #fefefe;
+    font-size: 30pt;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    justify-self: center;
+}
+.HomeContentButton
+{
+    justify-self: center;
+    color: black;
+    font-size: 15pt;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    transition-duration: 0.2s;
+}
+.HomeContentButton:hover
+{
+    background-color: lightgray;
+    transform: scale(1.2);
+}
+.HomeContentFooter
+{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+.HomeFooterImage
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    margin-left: 25px;
+}
+.HomeFooterImage:hover
+{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+.HomeFooterImage_logo
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    filter: brightness(300%);
+    margin-left: 25px;
+}
+.HomeFooterImage_logo:hover
+{
+    filter: brightness(500%);
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
