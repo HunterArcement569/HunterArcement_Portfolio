@@ -14,22 +14,22 @@ nav.navbar
 {
     position: sticky;
     background: linear-gradient(90deg, black, darkgreen);
-    width: 100%; /*take up the entire width of the window*/
+    width: 100%;
     height: 125px;
     justify-content: space-between;
-    align-items: center; /*align on the center vertically*/
-    display: flex; /*make the content all align on the vertical*/
-    outline: none; /*remove the outline*/
+    align-items: center;
+    display: flex;
+    outline: none;
     z-index: 20;
 }
 a.navbarHeader
 {
     font-family: "Times New Roman", serif;
     font-size: 50px;
-    color: green; /*color of the text*/
+    color: green;
     margin-left: 25px;
     margin-right: 25px;
-    text-decoration-line: none; /*remove the underline on the text*/
+    text-decoration-line: none;
     display: flex;
 }
 #ChannelLogo
@@ -59,20 +59,17 @@ button.navbarButton
 {
     font-family: "Times New Roman", serif;
     font-size: 25px;
-    background-color: darkgray; /*color of the background of the button*/
-    color: green; /*color of the text of the button*/
-    margin-left: 5px; /*space between buttons*/
-    margin-bottom: -10px; /*center the text on the vertical axis within the button*/
-    padding-top: 10px; /*slightly move the button down to make even with the navbar header text*/
-    padding-bottom: 10px;
-    padding-right: 8px;
-    padding-left: 8px;
+    background-color: darkgray;
+    color: green;
+    margin-left: 5px;
+    margin-bottom: -10px;
+    padding: 10px 8px;
 }
 button.navbarButton:hover
 {
-    background-color: grey; /*color the background of the button transitions to*/
-    color: #004009; /*color the text of the button transitions to*/
-    transition-duration: 0.2s; /*length it takes for the hover transition to take over*/
+    background-color: grey;
+    color: #004009;
+    transition-duration: 0.2s;
 }
 .navbarButtons
 {
@@ -130,12 +127,20 @@ img.footerImage
 /*styling for the about page*/
 .AboutMain
 {
-    margin: -40px 0 0 0;
+    margin: -55px 0 0 0;
     background-color: #fefefe;
     background-image: url('Images/backgroundTexture.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+.PageHeader
+{
+    justify-self: center;
+    color: black;
+    font-weight: bold;
+    font-size: 60pt;
+    font-family: Calibri, sans-serif;
 }
 .Segments
 {
@@ -187,9 +192,6 @@ ol.SegmentInformation
     text-decoration: underline;
     color: black;
 }
-
-/*styling for the projects page*/
-
 
 /*styling for the home page*/
 body.HomeBody
@@ -287,4 +289,115 @@ body.HomeBody
     filter: brightness(500%);
     transform: scale(1.2);
     transition-duration: 0.5s;
+}
+
+/*styling for the projects page*/
+.FilterHeader
+{
+    color: black;
+    font-size: 30pt;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    justify-self: center;
+}
+.FilterSegments
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.FilterSubmit
+{
+    justify-self: center;
+}
+.SpaceSegment
+{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    align-items: center;
+}
+.ProjectTypeSegments
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: start;
+}
+.ProjectLanguageSegments
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: end;
+}
+.ProjectFilter
+{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+.FilterLabel
+{
+    color: black;
+    font-size: 17pt;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    margin-top: -4px;
+}
+.Filter
+{
+    width: 1.5em;
+    height: 1.5em;
+    transition-duration: 0.2s;
+}
+.Filter:hover
+{
+    transform: scale(1.25);
+}
+.FilterSubmitButton
+{
+    color: black;
+    background-color: lightgray;
+    transition-duration: 0.2s;
+    font-size: 13pt;
+}
+.FilterSubmitButton:hover
+{
+    background-color: grey;
+    transform: scale(1.25);
+}
+.ProjectHeader
+{
+    color: black;
+    font-size: 30pt;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    justify-self: center;
+}
+.ProjectDescription
+{
+    color: black;
+    font-size: 15pt;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    justify-self: center;
+}
+.ProjectLink:link
+{
+    color: grey;
+    font-size: 14pt;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    justify-self: center;
+    text-decoration-line: none;
+}
+.ProjectLink:visited
+{
+    color: black;
+    font-size: 15pt;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    justify-self: center;
+    text-decoration-line: none;
 }

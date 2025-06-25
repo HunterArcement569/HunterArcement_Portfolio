@@ -33,10 +33,99 @@
     <!--section for the main content of the about page-->
     <main class="AboutMain">
 
+        <h1 class="PageHeader">Projects</h1>
+
         <!--filters section-->
-        <div class="Segments" id="FiltersSegment">
+        <h2 class="FilterHeader">Filters</h2>
+        <div class="FilterSegments" id="FiltersSegment">
+
+            <div class="ProjectLanguageSegments" id="ProjectLanguageSegments">
+
+                <div class="ProjectFilter">
+                    <label class="FilterLabel" for="Python">Python</label>
+                    <input class="Filter" type="checkbox" id="Python" name="python"/>
+                </div>
+
+                <div class="ProjectFilter">
+                    <label class="FilterLabel" for="Java">Java</label>
+                    <input class="Filter" type="checkbox" id="Java" name="java"/>
+                </div>
+
+                <div class="ProjectFilter">
+                    <label class="FilterLabel" for="C#">C#</label>
+                    <input class="Filter" type="checkbox" id="C#" name="c#"/>
+                </div>
+
+                <div class="ProjectFilter">
+                    <label class="FilterLabel" for="C++">C++</label>
+                    <input class="Filter" type="checkbox" id="C++" name="c++"/>
+                </div>
+
+                <div class="ProjectFilter">
+                    <label class="FilterLabel" for="C">C</label>
+                    <input class="Filter" type="checkbox" id="C" name="c"/>
+                </div>
+
+                <div class="ProjectFilter">
+                    <label class="FilterLabel" for="JavaScript">JavaScript</label>
+                    <input class="Filter" type="checkbox" id="JavaScript" name="javascript"/>
+                </div>
+
+                <div class="ProjectFilter">
+                    <label class="FilterLabel" for="Php">Php</label>
+                    <input class="Filter" type="checkbox" id="Php" name="php"/>
+                </div>
+
+                <div class="ProjectFilter">
+                    <label class="FilterLabel" for="Rust">Rust</label>
+                    <input class="Filter" type="checkbox" id="Rust" name="rust"/>
+                </div>
+
+                <div class="ProjectFilter">
+                    <label class="FilterLabel" for="Unity">Unity</label>
+                    <input class="Filter" type="checkbox" id="Unity" name="unity"/>
+                </div>
+
+            </div>
+
+            <div class="SpaceSegment"></div>
+
+            <div class="ProjectTypeSegments" id="ProjectTypeSegments">
+
+                <div class="ProjectFilter">
+                    <input class="Filter" type="checkbox" id="GameDevelopment" name="game_development"/>
+                    <label class="FilterLabel" for="GameDevelopment">Game Development</label>
+                </div>
+
+                <div class="ProjectFilter">
+                    <input class="Filter" type="checkbox" id="UserInterfaces" name="user_interfaces"/>
+                    <label class="FilterLabel" for="UserInterfaces">User Interfaces</label>
+                </div>
+
+                <div class="ProjectFilter">
+                    <input class="Filter" type="checkbox" id="WebDevelopment" name="web_development"/>
+                    <label class="FilterLabel" for="WebDevelopment">Web Development</label>
+                </div>
+
+                <div class="ProjectFilter">
+                    <input class="Filter" type="checkbox" id="DesktopApplications" name="desktop_applications"/>
+                    <label class="FilterLabel" for="DesktopApplications">Desktop Applications</label>
+                </div>
+
+                <div class="ProjectFilter">
+                    <input class="Filter" type="checkbox" id="DatabaseManagement" name="database_management"/>
+                    <label class="FilterLabel" for="DatabaseManagement">Database Management</label>
+                </div>
+
+                <div class="ProjectFilter">
+                    <input class="Filter" type="checkbox" id="Other" name="other"/>
+                    <label class="FilterLabel" for="Other">Other</label>
+                </div>
+
+            </div>
 
         </div>
+        <div class="FilterSubmit"><button class="FilterSubmitButton" onclick="FilterVideos()">Filter Projects</button></div>
 
         <!--content section-->
         <div class="Segments" id="ContentSegments">
