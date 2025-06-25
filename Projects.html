@@ -128,9 +128,14 @@
         <div class="FilterSubmit"><button class="FilterSubmitButton" onclick="FilterVideos()">Filter Projects</button></div>
 
         <!--content section-->
-        <div class="Segments" id="ContentSegments">
+        <div class="ContentSegments" id="ContentSegments">
 
         </div>
+
+        <!--force the projects all to load by default (either page load or reload)-->
+        <script>
+            FilterVideos();
+        </script>
 
     </main>
 

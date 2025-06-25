@@ -367,13 +367,19 @@ body.HomeBody
     background-color: grey;
     transform: scale(1.25);
 }
+.ContentSegments
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .ProjectHeader
 {
     color: black;
     font-size: 30pt;
     font-family: Calibri, sans-serif;
     font-weight: bold;
-    justify-self: center;
+    align-self: center;
 }
 .ProjectDescription
 {
@@ -381,7 +387,7 @@ body.HomeBody
     font-size: 15pt;
     font-family: Calibri, sans-serif;
     font-weight: normal;
-    justify-self: center;
+    align-self: center;
 }
 .ProjectLink:link
 {
@@ -389,8 +395,8 @@ body.HomeBody
     font-size: 14pt;
     font-family: Calibri, sans-serif;
     font-weight: bold;
-    justify-self: center;
     text-decoration-line: none;
+    align-self: center;
 }
 .ProjectLink:visited
 {
@@ -398,6 +404,6 @@ body.HomeBody
     font-size: 15pt;
     font-family: Calibri, sans-serif;
     font-weight: normal;
-    justify-self: center;
     text-decoration-line: none;
+    align-self: center;
 }

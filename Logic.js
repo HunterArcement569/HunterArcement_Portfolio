@@ -7,14 +7,16 @@ class Project
     ProjectTypes;
     ProjectDescription;
     ProjectLink;
+    WebsiteLink;
 
-    constructor(ProjectName, ProjectLanguage, ProjectTypes, ProjectDescription, ProjectLink)
+    constructor(ProjectName, ProjectLanguage, ProjectTypes, ProjectDescription, ProjectLink, WebsiteLink)
     {
         this.Name = ProjectName;
         this.Language = ProjectLanguage;
         this.ProjectTypes = ProjectTypes;
         this.ProjectDescription = ProjectDescription;
         this.ProjectLink = ProjectLink;
+        this.WebsiteLink = WebsiteLink;
     }
 }
 
@@ -23,9 +25,80 @@ var Projects =
     [
         new Project("GameHacker569 YouTube Website", "JavaScript",
             ["User Interfaces", "Web Development"],
-             "",
-            ""),
-
+            [""],
+            "https://youtu.be/ft0qs8eZj6U", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Other%20Languages/OtherLanguagesHome.html#GameHacker569Website"),
+        new Project("Chess", "Unity",
+            ["Game Development"],
+            [""],
+            "https://youtu.be/lhjauQM_j7E", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Unity/UnityHome.html#UnityChess"),
+        new Project("Custom MIPS Assembler", "Python",
+            ["Other"],
+            [""],
+            "https://youtu.be/97EkooneuHE", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Python/PythonHome.html#CustomMIPSAssembler"),
+        new Project("Car Dealership DBMS (WPF)", "C#",
+            ["User Interfaces", "Desktop Application", "Databases"],
+            [""],
+            "https://youtu.be/VBJjLyopTgY", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/C%23/C%23Home.html#WinFormsAndWPF_1"),
+        new Project("Songs DBMS (WinForms)", "C#",
+            ["User Interfaces", "Desktop Application", "Databases"],
+            [""],
+            "https://youtu.be/xbZQ6AfgK7I", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/C%23/C%23Home.html#WinFormsAndWPF_1"),
+        new Project("File Sharing DBMS Server", "C#",
+            ["Databases", "Other"],
+            [""],
+            "https://youtu.be/_qEhEJIJNeY", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/C%23/C%23Home.html#FileSharingDBMS"),
+        new Project("Car DBMS", "C",
+            ["Databases"],
+            [""],
+            "https://youtu.be/BUxjYq0Hpp4", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Other%20Languages/OtherLanguagesHome.html#CDBMS"),
+        new Project("Random 3D Maze", "Unity",
+            ["User Interfaces", "Game Development"],
+            [""],
+            "https://youtu.be/cvvRWUAtGp4", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Unity/UnityHome.html#Random3DMaze"),
+        new Project("Music DBMS", "Rust",
+            ["Databases"],
+            [""],
+            "https://youtu.be/wX6tKnwgP6k", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Other%20Languages/OtherLanguagesHome.html#RustDBMS"),
+        new Project("Zombies High Rounds DBMS", "C++",
+            ["Databases"],
+            [""],
+            "https://youtu.be/MLtVwfP8uxc", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Other%20Languages/OtherLanguagesHome.html#CppDBMS"),
+        new Project("Fridge DBMS", "Java",
+            ["Databases"],
+            [""],
+            "https://youtu.be/K56Pb6cO57w", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Java/JavaHome.html#JavaDBMS"),
+        new Project("Birthday DBMS", "Php",
+            ["Databases"],
+            [""],
+            "https://youtu.be/1NYKDFjn0Fg", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Other%20Languages/OtherLanguagesHome.html#PhpDBMS"),
+        new Project("Overwatch Map Win Percent DBMS", "Python",
+            ["Databases"],
+            [""],
+            "https://youtu.be/VB0ceEV0jlg", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Python/PythonHome.html#PythonDBMS"),
+        new Project("Matrices Desktop Application", "C#",
+            ["User Interfaces", "Desktop Application", "Databases", "Web Development"],
+            [""],
+            "https://youtu.be/daUhRFX1eaE", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/C%23/C%23Home.html#MatrixWebsite"),
+        new Project("Matrix & Vector Classes", "Java",
+            ["Other"],
+            [""],
+            "https://youtu.be/4bBsRv6o_ag", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Java/JavaHome.html#MatrixClass"),
+        new Project("Monopoly", "Python",
+            ["User Interfaces", "Game Development"],
+            "",
+            "https://youtu.be/aQzKW3lHo80", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Python/PythonHome.html#MonopolyWithPython"),
+        new Project("Battleship", "Python",
+            ["User Interfaces", "Game Development"],
+            [""],
+            "https://youtu.be/98RD77UyLVU", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Python/PythonHome.html#BattleshipWithPython"),
+        new Project("Chess", "Python",
+            ["User Interfaces", "Game Development"],
+            [""],
+            "https://youtu.be/7r0CUCYXgy4", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Python/PythonHome.html#PythonChess"),
+        new Project("Matchmaking DBMS", "JavaScript",
+            ["User Interfaces", "Web Development", "Databases"],
+            [""],
+            "https://youtu.be/DW95kXc1Y0E", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Other%20Languages/OtherLanguagesHome.html#MatchMakingInJavaScript")
     ];
 
 //function to swap the videos, called when the filter button is pressed
@@ -46,32 +119,43 @@ function FilterVideos()
     //display each of the projects in the filtered list
     for(let i = 0; i < filteredProjects.length; i++)
     {
+        //create the line break(s)
+        let lineBreak = document.createElement("br");
+
         //create the project header
         let header = document.createElement("h2");
         header.setAttribute("class", "ProjectHeader");
         header.setAttribute("id", filteredProjects[i].Name)
         header.textContent = filteredProjects[i].Name;
+        parent.appendChild(header);
 
         //create the project description
-        let description = document.createElement("p");
-        description.setAttribute("class", "ProjectDescription");
-        description.textContent = filteredProjects[i].ProjectDescription;
+        for(let j = 0; j < filteredProjects[i].ProjectDescription.length; j++)
+        {
+            let description = document.createElement("p");
+            description.setAttribute("class", "ProjectDescription");
+            description.textContent = filteredProjects[i].ProjectDescription;
+            parent.appendChild(description);
+            parent.appendChild(lineBreak);
+            parent.appendChild(lineBreak);
+        }
 
         //create the project link
         let link = document.createElement("a");
         link.setAttribute("class", "ProjectLink");
         link.setAttribute("href", filteredProjects[i].ProjectLink);
+        link.setAttribute("target", "_blank");
         link.textContent = "Link to the Project's YouTube Video";
-
-        //create the line break(s)
-        let lineBreak = document.createElement("br");
-
-        //add all to the parent in order, with two line breaks
-        parent.appendChild(header);
-        parent.appendChild(description);
         parent.appendChild(link);
         parent.appendChild(lineBreak);
-        parent.appendChild(lineBreak);
+
+        //create the website link
+        let weblink = document.createElement("a");
+        weblink.setAttribute("class", "ProjectLink");
+        weblink.setAttribute("href", filteredProjects[i].WebsiteLink);
+        link.setAttribute("target", "_blank");
+        weblink.textContent = "Link to the Project's Website Section";
+        parent.appendChild(weblink);
     }
 }
 
