@@ -388,6 +388,9 @@ body.HomeBody
     font-family: Calibri, sans-serif;
     font-weight: normal;
     align-self: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-indent: 3rem;
 }
 .ProjectLink:link
 {
