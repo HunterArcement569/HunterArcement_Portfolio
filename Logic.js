@@ -153,7 +153,7 @@ function FilterVideos()
         let weblink = document.createElement("a");
         weblink.setAttribute("class", "ProjectLink");
         weblink.setAttribute("href", filteredProjects[i].WebsiteLink);
-        link.setAttribute("target", "_blank");
+        weblink.setAttribute("target", "_blank");
         weblink.textContent = "Link to the Project's Website Section";
         parent.appendChild(weblink);
 
