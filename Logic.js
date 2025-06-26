@@ -156,6 +156,10 @@ function FilterVideos()
         link.setAttribute("target", "_blank");
         weblink.textContent = "Link to the Project's Website Section";
         parent.appendChild(weblink);
+
+        parent.appendChild(lineBreak);
+        parent.appendChild(lineBreak);
+        parent.appendChild(lineBreak);
     }
 }
 
