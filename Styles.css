@@ -9,33 +9,34 @@ html, body
     box-sizing: border-box;
 }
 
-/*styling for the navbar (same navbar for every page aside from home page being absolute)*/
+/*style of the navbar on the about and projects pages*/
 nav.navbar
 {
     position: sticky;
     background: linear-gradient(90deg, black, darkgreen);
     width: 100%;
-    height: 125px;
+    height: 17.12vh;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    display: flex;
     outline: none;
     z-index: 20;
 }
 a.navbarHeader
 {
     font-family: "Times New Roman", serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     color: green;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-decoration-line: none;
+    margin-left: 1.63vw;
+    margin-right: 1.63vw;
+    text-decoration: none;
     display: flex;
 }
+
 #ChannelLogo
 {
-    width: 110px;
-    height: 110px;
+    width: 7.16vw;
+    height: 15.07vh;
     border-radius: 60%;
     filter: brightness(300%);
 }
@@ -47,8 +48,8 @@ a.navbarHeader
 }
 #ChannelName
 {
-    margin-left: 35px;
-    padding-top: 35px;
+    margin-left: 2.28vw;
+    padding-top: 4.79vh;
 }
 #ChannelName:hover
 {
@@ -58,12 +59,12 @@ a.navbarHeader
 button.navbarButton
 {
     font-family: "Times New Roman", serif;
-    font-size: 25px;
+    font-size: 1.5625rem;
     background-color: darkgray;
     color: green;
-    margin-left: 5px;
-    margin-bottom: -10px;
-    padding: 10px 8px;
+    margin-left: 0.33vw;
+    margin-bottom: -1.37vh;
+    padding: 1.37vh 0.52vw;
 }
 button.navbarButton:hover
 {
@@ -73,8 +74,8 @@ button.navbarButton:hover
 }
 .navbarButtons
 {
-    gap: 25px;
-    margin-right: 25px;
+    gap: 1.63vw;
+    margin-right: 1.63vw;
 }
 .dropdown
 {
@@ -89,7 +90,7 @@ footer.footer
     position: static;
     background: linear-gradient(90deg, darkgreen, black);
     width: 100%;
-    height: 125px;
+    height: 17.12vh;
     align-items: center;
     display: flex;
     outline: none;
@@ -97,7 +98,7 @@ footer.footer
 }
 a.footerHomeLink
 {
-    margin-left: 50px;
+    margin-left: 3.26vw;
     text-decoration-line: underline;
     color: white;
 }
@@ -113,21 +114,21 @@ a.footerHomeLink:visited
 }
 img.footerImage
 {
-    width: 75px;
-    height: 75px;
-    margin-left: 50px;
+    width: 4.88vw;
+    height: 10.27vh;
+    margin-left: 3.26vw;
     text-decoration-line: none;
 }
 #footerCopyright
 {
     color: white;
-    margin-left: 50px;
+    margin-left: 3.26vw;
 }
 
 /*styling for the about page*/
 .AboutMain
 {
-    margin: -55px 0 0 0;
+    margin: -7.53vh 0 0 0;
     background-color: #fefefe;
     background-image: url('Images/backgroundTexture.jpg');
     background-size: cover;
@@ -139,7 +140,7 @@ img.footerImage
     justify-self: center;
     color: black;
     font-weight: bold;
-    font-size: 60pt;
+    font-size: 4.98rem;
     font-family: Calibri, sans-serif;
 }
 .Segments
@@ -152,7 +153,7 @@ img.footerImage
     justify-self: center;
     color: black;
     font-weight: bold;
-    font-size: 40pt;
+    font-size: 3.32rem;
     font-family: Calibri, sans-serif;
 }
 .SegmentInformation
@@ -163,7 +164,7 @@ img.footerImage
     margin-right: 5em;
     color: black;
     font-weight: normal;
-    font-size: 20pt;
+    font-size: 1.66rem;
     font-family: Calibri, sans-serif;
 }
 ol.SegmentInformation
@@ -179,7 +180,7 @@ ol.SegmentInformation
     list-style: none;
     color: black;
     font-weight: normal;
-    font-size: 15pt;
+    font-size: 1.25rem;
     font-family: Calibri, sans-serif;
 }
 .ExternalLink:link
@@ -211,7 +212,7 @@ body.HomeBody
     background-repeat: no-repeat;
     background-position: left center;
     height: 100vh;
-    width: 496px;
+    width: 32.29vw;
     flex-shrink: 0;
 }
 .HomeContentDiv
@@ -225,7 +226,7 @@ body.HomeBody
 .HomeHeader
 {
     color: palegreen;
-    font-size: 50pt;
+    font-size: 4.17rem;
     font-family: Calibri, sans-serif;
     font-weight: bold;
     justify-self: center;
@@ -239,7 +240,7 @@ body.HomeBody
 .HomeContentHeader
 {
     color: #fefefe;
-    font-size: 30pt;
+    font-size: 2.5rem;
     font-family: Calibri, sans-serif;
     font-weight: bold;
     justify-self: center;
@@ -248,7 +249,7 @@ body.HomeBody
 {
     justify-self: center;
     color: black;
-    font-size: 15pt;
+    font-size: 1.25rem;
     font-family: Calibri, sans-serif;
     font-weight: normal;
     transition-duration: 0.2s;
@@ -266,10 +267,10 @@ body.HomeBody
 }
 .HomeFooterImage
 {
-    width: 100px;
-    height: 100px;
+    width: 6.51vw;
+    height: 13.7vh;
     border-radius: 60%;
-    margin-left: 25px;
+    margin-left: 1.63vw;
 }
 .HomeFooterImage:hover
 {
@@ -278,11 +279,11 @@ body.HomeBody
 }
 .HomeFooterImage_logo
 {
-    width: 100px;
-    height: 100px;
+    width: 6.51vw;
+    height: 13.7vh;
     border-radius: 60%;
     filter: brightness(300%);
-    margin-left: 25px;
+    margin-left: 1.63vw;
 }
 .HomeFooterImage_logo:hover
 {
@@ -291,11 +292,11 @@ body.HomeBody
     transition-duration: 0.5s;
 }
 
-/*styling for the projects page*/
+/*style of the projects page*/
 .FilterHeader
 {
     color: black;
-    font-size: 30pt;
+    font-size: 2.5rem;
     font-family: Calibri, sans-serif;
     font-weight: normal;
     justify-self: center;
@@ -340,10 +341,10 @@ body.HomeBody
 .FilterLabel
 {
     color: black;
-    font-size: 17pt;
+    font-size: 1.42rem;
     font-family: Calibri, sans-serif;
     font-weight: normal;
-    margin-top: -4px;
+    margin-top: -0.25rem;
 }
 .Filter
 {
@@ -360,7 +361,7 @@ body.HomeBody
     color: black;
     background-color: lightgray;
     transition-duration: 0.2s;
-    font-size: 13pt;
+    font-size: 1.08rem;
 }
 .FilterSubmitButton:hover
 {
@@ -376,15 +377,16 @@ body.HomeBody
 .ProjectHeader
 {
     color: black;
-    font-size: 30pt;
+    font-size: 2.5rem;
     font-family: Calibri, sans-serif;
     font-weight: bold;
     align-self: center;
 }
+
 .ProjectDescription
 {
     color: black;
-    font-size: 15pt;
+    font-size: 1.25rem;
     font-family: Calibri, sans-serif;
     font-weight: normal;
     align-self: center;
@@ -395,7 +397,7 @@ body.HomeBody
 .ProjectLink:link
 {
     color: grey;
-    font-size: 14pt;
+    font-size: 1.17rem;
     font-family: Calibri, sans-serif;
     font-weight: bold;
     text-decoration-line: none;
@@ -404,7 +406,7 @@ body.HomeBody
 .ProjectLink:visited
 {
     color: black;
-    font-size: 15pt;
+    font-size: 1.25rem;
     font-family: Calibri, sans-serif;
     font-weight: normal;
     text-decoration-line: none;
