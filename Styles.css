@@ -145,7 +145,8 @@ img.footerImage
 }
 .Segments
 {
-    display: flow;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .SegmentHeader
@@ -155,6 +156,11 @@ img.footerImage
     font-weight: bold;
     font-size: 3.32rem;
     font-family: Calibri, sans-serif;
+    margin-bottom: -2rem;
+}
+#Profession,#ResumeLink
+{
+    margin-bottom: 0;
 }
 .SegmentInformation
 {
@@ -166,22 +172,51 @@ img.footerImage
     font-weight: normal;
     font-size: 1.66rem;
     font-family: Calibri, sans-serif;
+    text-indent: -5em;
+}
+li
+{
+    justify-self: center;
+    text-align: center;
 }
 ol.SegmentInformation
 {
-    list-style: none;
+    padding-left: 7em;
+    list-style: square;
+    justify-self: center;
+    justify-items: center;
+    text-indent: -5em;
 }
 .EmploymentDurationList
 {
+    justify-self: center;
+    text-align: center;
     list-style: none;
 }
 .EmploymentDuration
 {
-    list-style: none;
+    justify-self: center;
+    text-align: center;
     color: black;
     font-weight: normal;
     font-size: 1.25rem;
     font-family: Calibri, sans-serif;
+}
+.ProgrammingList
+{
+    justify-self: left;
+    text-align: left;
+    list-style: disc;
+}
+.Language
+{
+    justify-self: left;
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    font-size: 1.33rem;
+    font-family: Calibri, sans-serif;
+    text-indent: -0.5em;
 }
 .ExternalLink:link
 {
@@ -192,6 +227,27 @@ ol.SegmentInformation
 {
     text-decoration: underline;
     color: black;
+}
+.ResumeLink
+{
+    margin-bottom: 2rem;
+}
+.ResumeButton
+{
+    justify-self: center;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    color: black;
+    font-weight: normal;
+    font-size: 1rem;
+    font-family: Calibri, sans-serif;
+    transition-duration: 0.2s;
+}
+.ResumeButton:hover
+{
+    transform: scale(1.25);
+    background-color: grey;
 }
 
 /*styling for the home page*/
