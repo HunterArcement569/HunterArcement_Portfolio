@@ -98,7 +98,11 @@ var Projects =
         new Project("Matchmaking DBMS", "JavaScript",
             ["User Interfaces", "Web Development", "Databases"],
             ["This project was a matchmaking Database Management System developed as a console application in JavaScript using Node.js, with SQLite serving as the backend database. As one of my first ventures into JavaScript development, the integration of SQLite presented a significant learning curve—finding suitable tutorials and resources took months of dedicated research and experimentation.", "The application focused on core matchmaking logic such as managing user profiles, storing preferences, and generating match suggestions based purely on backend data operations and command-line interactions. This experience strengthened my understanding of asynchronous programming in JavaScript, database queries, and data management without relying on any graphical user interface. It was a valuable exercise in building functional, logic-driven software in a minimalistic environment."],
-            "https://youtu.be/DW95kXc1Y0E", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Other%20Languages/OtherLanguagesHome.html#MatchMakingInJavaScript")
+            "https://youtu.be/DW95kXc1Y0E", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Other%20Languages/OtherLanguagesHome.html#MatchMakingInJavaScript"),
+        new Project("Flappy Bird Recreation V2.0", "Unity",
+            ["User Interfaces", "Game Development"],
+            ["This project was a way for me to prove how far I've come in my game development journey. In my first project, I struggled with colliders and physics objects. There were no sound effects, settings, or even a main title screen. The visual assets kept their png backgrounds leading to the project seeming less complete and unpolished. With this project I remedied all of those concerns, breathing much needed life and polish to the project. I am very happy of how it turned out, and I only gave it a week and a half of development!"],
+            "https://youtu.be/Oq42c0kP3RY?si=PXH6cuqTAPPOXU0g", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Unity/UnityHome.html#FlappyBird2")
     ];
 
 //function to swap the videos, called when the filter button is pressed
