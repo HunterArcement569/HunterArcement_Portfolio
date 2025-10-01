@@ -106,7 +106,7 @@ var Projects =
         new Project("Electric Marimba Company -- Spring Boot", "Java",
             ["User Interfaces", "Web Development", "Databases"],
             ["This project was a way for me to learn a new server/web development framework -- Spring Boot. This is a Java-based framework very similar to Django from Python as well as WPF and Blazor from C#. I also learned about Docker containing/imaging/distributing."],
-            "https://www.youtube.com/embed/ZSsaJQfseMw?si=2HOQ3NGEuNBRTM51")
+            "https://www.youtube.com/embed/ZSsaJQfseMw?si=2HOQ3NGEuNBRTM51", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Java/JavaHome.html#JavaSprintBoot_1")
     ];
 
 //function to swap the videos, called when the filter button is pressed
