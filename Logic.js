@@ -102,7 +102,11 @@ var Projects =
         new Project("Flappy Bird Recreation V2.0", "Unity",
             ["User Interfaces", "Game Development"],
             ["This project was a way for me to prove how far I've come in my game development journey. In my first project, I struggled with colliders and physics objects. There were no sound effects, settings, or even a main title screen. The visual assets kept their png backgrounds leading to the project seeming less complete and unpolished. With this project I remedied all of those concerns, breathing much needed life and polish to the project. I am very happy of how it turned out, and I only gave it a week and a half of development!"],
-            "https://youtu.be/Oq42c0kP3RY?si=PXH6cuqTAPPOXU0g", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Unity/UnityHome.html#FlappyBird2")
+            "https://youtu.be/Oq42c0kP3RY?si=PXH6cuqTAPPOXU0g", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Unity/UnityHome.html#FlappyBird2"),
+        new Project("Electric Marimba Company -- Spring Boot", "Java",
+            ["User Interfaces", "Web Development", "Databases"],
+            ["This project was a way for me to learn a new server/web development framework -- Spring Boot. This is a Java-based framework very similar to Django from Python as well as WPF and Blazor from C#. I also learned about Docker containing/imaging/distributing."],
+            "https://www.youtube.com/embed/ZSsaJQfseMw?si=2HOQ3NGEuNBRTM51")
     ];
 
 //function to swap the videos, called when the filter button is pressed
@@ -138,7 +142,7 @@ function FilterVideos()
         {
             let description = document.createElement("p");
             description.setAttribute("class", "ProjectDescription");
-            description.textContent = filteredProjects[i].ProjectDescription;
+            description.textContent = filteredProjects[i].ProjectDescription[j];
             parent.appendChild(description);
             parent.appendChild(lineBreak);
             parent.appendChild(lineBreak);
