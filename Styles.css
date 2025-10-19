@@ -450,6 +450,20 @@ body.HomeBody
     margin-right: 25%;
     text-indent: 3rem;
 }
+@Media (orientation: Portrait)
+{
+    .ProjectDescription
+    {
+        color: black;
+        font-size: 0.75rem;
+        font-family: Calibri, sans-serif;
+        font-weight: normal;
+        align-self: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-indent: 3rem;
+    }
+}
 .ProjectLink:link
 {
     color: grey;
