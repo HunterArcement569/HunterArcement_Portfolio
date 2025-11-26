@@ -311,6 +311,11 @@ body.HomeBody
     justify-self: center;
     text-align: center;
 }
+.HomeContentLink
+{
+    align-self: center;
+    justify-self: center;
+}
 .HomeContentButton
 {
     justify-self: center;
@@ -359,6 +364,11 @@ body.HomeBody
 }
 
 /*style of the projects page*/
+.PageHeader
+{
+    width: 100%;
+    text-align: center;
+}
 .FilterHeader
 {
     color: black;
@@ -366,6 +376,8 @@ body.HomeBody
     font-family: Calibri, sans-serif;
     font-weight: normal;
     justify-self: center;
+    width: 100%;
+    text-align: center;
 }
 .FilterSegments
 {
@@ -376,6 +388,7 @@ body.HomeBody
 .FilterSubmit
 {
     justify-self: center;
+    align-self: center;
 }
 .SpaceSegment
 {
