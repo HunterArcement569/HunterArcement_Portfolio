@@ -15,9 +15,9 @@ nav.navbar
     position: sticky;
     background: linear-gradient(90deg, black, darkgreen);
     width: 100%;
-    height: 17.12vh;
+    height: 17vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     outline: none;
     z-index: 20;
@@ -25,7 +25,7 @@ nav.navbar
 a.navbarHeader
 {
     font-family: "Times New Roman", serif;
-    font-size: 3.125rem;
+    font-size: 3vw;
     color: green;
     margin-left: 1.63vw;
     margin-right: 1.63vw;
@@ -134,13 +134,14 @@ img.footerImage
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
 }
 .PageHeader
 {
     justify-self: center;
     color: black;
     font-weight: bold;
-    font-size: 4.98rem;
+    font-size: 5vw;
     font-family: Calibri, sans-serif;
 }
 .Segments
@@ -148,15 +149,19 @@ img.footerImage
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .SegmentHeader
 {
     justify-self: center;
     color: black;
     font-weight: bold;
-    font-size: 3.32rem;
+    font-size: 3.3vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
     font-family: Calibri, sans-serif;
     margin-bottom: -2rem;
+    text-align: center;
 }
 #Profession,#ResumeLink
 {
@@ -166,13 +171,13 @@ img.footerImage
 {
     justify-self: center;
     text-align: center;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 6vw;
+    margin-right: 4vw;
     color: black;
     font-weight: normal;
-    font-size: 1.66rem;
+    font-size: 1.5vw;
     font-family: Calibri, sans-serif;
-    text-indent: -5em;
+    text-indent: -5vw;
 }
 li
 {
@@ -181,11 +186,14 @@ li
 }
 ol.SegmentInformation
 {
-    padding-left: 7em;
+    padding-left: 7vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
     list-style: square;
     justify-self: center;
     justify-items: center;
-    text-indent: -5em;
+    text-indent: -5vw;
+    text-align: center;
 }
 .EmploymentDurationList
 {
@@ -278,11 +286,12 @@ body.HomeBody
     padding: 0;
     overflow-y: auto;
     justify-items: center;
+    align-content: center;
 }
 .HomeHeader
 {
     color: palegreen;
-    font-size: 4.17rem;
+    font-size: 4vw;
     font-family: Calibri, sans-serif;
     font-weight: bold;
     justify-self: center;
@@ -296,10 +305,11 @@ body.HomeBody
 .HomeContentHeader
 {
     color: #fefefe;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     font-family: Calibri, sans-serif;
     font-weight: bold;
     justify-self: center;
+    text-align: center;
 }
 .HomeContentButton
 {
@@ -438,31 +448,17 @@ body.HomeBody
     font-weight: bold;
     align-self: center;
 }
-
 .ProjectDescription
 {
     color: black;
-    font-size: 1.25rem;
+    font-size: 2vw;
     font-family: Calibri, sans-serif;
     font-weight: normal;
     align-self: center;
     margin-left: 25%;
     margin-right: 25%;
     text-indent: 3rem;
-}
-@Media (orientation: Portrait)
-{
-    .ProjectDescription
-    {
-        color: black;
-        font-size: 0.75rem;
-        font-family: Calibri, sans-serif;
-        font-weight: normal;
-        align-self: center;
-        margin-left: 25%;
-        margin-right: 25%;
-        text-indent: 3rem;
-    }
+    text-align: center;
 }
 .ProjectLink:link
 {
@@ -481,4 +477,795 @@ body.HomeBody
     font-weight: normal;
     text-decoration-line: none;
     align-self: center;
+}
+
+/*portrait screen overrides*/
+@Media (orientation: portrait)
+{
+    /*navbar overrides*/
+    nav.navbar
+    {
+        position: sticky;
+        width: 100%;
+        height: 12vh;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        outline: none;
+        z-index: 20;
+    }
+    a.navbarHeader
+    {
+        font-family: "Times New Roman", serif;
+        font-size: 3.75vw;
+        margin-left: 1vw;
+        margin-right: 0.5vw;
+        text-decoration-line: none;
+        display: flex;
+    }
+    #ChannelLogo
+    {
+        width: 8vw;
+        height: 8vh;
+        border-radius: 60%;
+        filter: brightness(300%);
+    }
+    #ChannelLogo:hover
+    {
+        transform: scale(1.0);
+        filter: brightness(500%);
+        transition: 1s;
+    }
+    #ChannelName
+    {
+        margin-left: 2vw;
+        padding-top: 1vh;
+    }
+    #ChannelName:hover
+    {
+        transform: scale(1.0);
+        transition: 1s;
+    }
+    button.navbarButton
+    {
+        font-family: "Times New Roman", serif;
+        font-size: 3vw;
+        margin-left: 0.33vw;
+        margin-bottom: -1.37vh;
+        padding-top: 1.37vh;
+        padding-bottom: 1.37vh;
+        padding-right: 0.52vw;
+        padding-left: 0.52vw;
+    }
+    .navbarButtons
+    {
+        gap: 1.63vw;
+        margin-right: 1.63vw;
+    }
+    .dropdown
+    {
+        position: relative;
+        justify-self: right;
+        display: inline-block;
+    }
+
+    /*home page overrides*/
+    .HomeContentHeader
+    {
+        color: #fefefe;
+        font-size: 2.5vw;
+        font-family: Calibri, sans-serif;
+        font-weight: bold;
+        justify-self: center;
+        text-align: center;
+    }
+    .HomeFooterImage
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        margin-left: 1.63vw;
+    }
+    .HomeFooterImage_logo
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        filter: brightness(300%);
+        margin-left: 1.63vw;
+    }
+
+    /*about page override*/
+    h2.SegmentHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 3vw;
+        font-family: Calibri, sans-serif;
+        margin-bottom: -2vw;
+        text-align: center;
+    }
+    .SegmentInformation
+    {
+        justify-self: center;
+        text-align: center;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        color: black;
+        font-weight: normal;
+        font-size: 2.2vw;
+        font-family: Calibri, sans-serif;
+    }
+    ol.SegmentInformation
+    {
+        padding-left: 7vw;
+        list-style: square;
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    /*project page overrides*/
+    .ProjectDescription
+    {
+        color: black;
+        font-size: 2vw;
+        font-family: Calibri, sans-serif;
+        font-weight: normal;
+        align-self: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-indent: 3rem;
+        text-align: center;
+    }
+
+    /*footer override*/
+    footer.footer
+    {
+        position: static;
+        width: 100%;
+        height: 12vh;
+        align-items: center;
+        display: flex;
+        outline: none;
+        justify-items: center;
+    }
+    a.footerHomeLink
+    {
+        margin-left: 2vw;
+        text-decoration-line: none;
+        color: white;
+        font-size: 2vw;
+    }
+    a.footerHomeLink:link,
+    a.footerHomeLink:visited
+    {
+        text-decoration-line: none;
+        color: white;
+    }
+    img.footerImage
+    {
+        width: 6vw;
+        height: 6vw;
+        margin-left: 2vw;
+        text-decoration-line: none;
+    }
+    #footerCopyright
+    {
+        color: white;
+        margin-left: 2vw;
+        font-size: 2vw;
+    }
+}
+
+/*ipad landscape screen overrides*/
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape)
+{
+    /*navbar overrides*/
+    nav.navbar
+    {
+        position: sticky;
+        width: 100%;
+        height: 12vh;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        outline: none;
+        z-index: 20;
+    }
+    a.navbarHeader
+    {
+        font-family: "Times New Roman", serif;
+        font-size: 3.75vw;
+        margin-left: 1vw;
+        margin-right: 0.5vw;
+        text-decoration-line: none;
+        display: flex;
+    }
+    #ChannelLogo
+    {
+        width: 8vw;
+        height: 8vh;
+        border-radius: 60%;
+        filter: brightness(300%);
+    }
+    #ChannelLogo:hover
+    {
+        transform: scale(1.0);
+        filter: brightness(500%);
+        transition: 1s;
+    }
+    #ChannelName
+    {
+        margin-left: 2vw;
+        padding-top: 1vh;
+    }
+    #ChannelName:hover
+    {
+        transform: scale(1.0);
+        transition: 1s;
+    }
+    button.navbarButton
+    {
+        font-family: "Times New Roman", serif;
+        font-size: 3vw;
+        margin-left: 0.33vw;
+        margin-bottom: -1.37vh;
+        padding-top: 1.37vh;
+        padding-bottom: 1.37vh;
+        padding-right: 0.52vw;
+        padding-left: 0.52vw;
+    }
+    .navbarButtons
+    {
+        gap: 1.63vw;
+        margin-right: 1.63vw;
+    }
+    .dropdown
+    {
+        position: relative;
+        justify-self: right;
+        display: inline-block;
+    }
+
+    /*home page overrides*/
+    .HomeContentHeader
+    {
+        color: #fefefe;
+        font-size: 2.5vw;
+        font-family: Calibri, sans-serif;
+        font-weight: bold;
+        justify-self: center;
+        text-align: center;
+    }
+    .HomeFooterImage
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        margin-left: 1.63vw;
+    }
+    .HomeFooterImage_logo
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        filter: brightness(300%);
+        margin-left: 1.63vw;
+    }
+
+    /*about page override*/
+    h2.SegmentHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 3vw;
+        font-family: Calibri, sans-serif;
+        margin-bottom: -2vw;
+        text-align: center;
+    }
+    .SegmentInformation
+    {
+        justify-self: center;
+        text-align: center;
+        margin-left: 12vh;
+        margin-right: 12vh;
+        color: black;
+        font-weight: normal;
+        font-size: 2.2vw;
+        font-family: Calibri, sans-serif;
+    }
+    ol.SegmentInformation
+    {
+        padding-left: 7vw;
+        list-style: square;
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    /*project page overrides*/
+    .PageHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 5vw;
+        font-family: Calibri, sans-serif;
+        margin-top: 5vw;
+    }
+    .ProjectDescription
+    {
+        color: black;
+        font-size: 2vw;
+        font-family: Calibri, sans-serif;
+        font-weight: normal;
+        align-self: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-indent: 3rem;
+        text-align: center;
+    }
+
+    /*footer override*/
+    footer.footer
+    {
+        position: static;
+        width: 100%;
+        height: 12vh;
+        align-items: center;
+        display: flex;
+        outline: none;
+        justify-items: center;
+    }
+    a.footerHomeLink
+    {
+        margin-left: 2vw;
+        text-decoration-line: none;
+        color: white;
+        font-size: 1.2vw;
+    }
+    a.footerHomeLink:link,
+    a.footerHomeLink:visited
+    {
+        text-decoration-line: none;
+        color: white;
+    }
+    img.footerImage
+    {
+        width: 6vw;
+        height: 6vw;
+        margin-left: 2vw;
+        text-decoration-line: none;
+    }
+    #footerCopyright
+    {
+        color: white;
+        margin-left: 2vw;
+        font-size: 1.2vw;
+    }
+}
+
+/*smaller than ipad landscape screen overrides (1px smaller than ipad mini on both dimensions)*/
+@media (max-width: 1023px) and (orientation: landscape)
+{
+    /*navbar overrides*/
+    nav.navbar
+    {
+        position: sticky;
+        width: 100%;
+        height: 18vh;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        outline: none;
+        z-index: 20;
+    }
+    a.navbarHeader
+    {
+        font-family: "Times New Roman", serif;
+        font-size: 3vw;
+        margin-left: 1vw;
+        margin-right: 0.5vw;
+        text-decoration-line: none;
+        display: flex;
+    }
+    #ChannelLogo
+    {
+        width: 8vw;
+        height: 8vh;
+        border-radius: 60%;
+        filter: brightness(300%);
+    }
+    #ChannelLogo:hover
+    {
+        transform: scale(1.0);
+        filter: brightness(500%);
+        transition: 1s;
+    }
+    #ChannelName
+    {
+        margin-left: 2vw;
+        padding-top: 0.75vh;
+    }
+    #ChannelName:hover
+    {
+        transform: scale(1.0);
+        transition: 1s;
+    }
+    button.navbarButton
+    {
+        font-family: "Times New Roman", serif;
+        font-size: 3vw;
+        margin-left: 0.33vw;
+        margin-bottom: -1.37vh;
+        padding-top: 1.37vh;
+        padding-bottom: 1.37vh;
+        padding-right: 0.52vw;
+        padding-left: 0.52vw;
+    }
+    .navbarButtons
+    {
+        gap: 1.63vw;
+        margin-right: 1.63vw;
+    }
+    .dropdown
+    {
+        position: relative;
+        justify-self: right;
+        display: inline-block;
+    }
+
+    /*home page overrides*/
+    .HomeContentHeader
+    {
+        color: #fefefe;
+        font-size: 2.5vw;
+        font-family: Calibri, sans-serif;
+        font-weight: bold;
+        justify-self: center;
+        text-align: center;
+    }
+    .HomeFooterImage
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        margin-left: 1.63vw;
+    }
+    .HomeFooterImage_logo
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        filter: brightness(300%);
+        margin-left: 1.63vw;
+    }
+
+    /*about page override*/
+    h2.SegmentHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 3vw;
+        font-family: Calibri, sans-serif;
+        margin-bottom: -2vw;
+        text-align: center;
+    }
+    .SegmentInformation
+    {
+        justify-self: center;
+        text-align: center;
+        margin-left: 12vh;
+        margin-right: 12vh;
+        color: black;
+        font-weight: normal;
+        font-size: 2.2vw;
+        font-family: Calibri, sans-serif;
+    }
+    ol.SegmentInformation
+    {
+        padding-left: 7vw;
+        list-style: square;
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    /*project page overrides*/
+    .PageHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 5vw;
+        font-family: Calibri, sans-serif;
+        padding-top: 5vw;
+    }
+    .ProjectDescription
+    {
+        color: black;
+        font-size: 2vw;
+        font-family: Calibri, sans-serif;
+        font-weight: normal;
+        align-self: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-indent: 3rem;
+        text-align: center;
+    }
+
+    /*footer override*/
+    footer.footer
+    {
+        position: static;
+        width: 100%;
+        height: 18vh;
+        align-items: center;
+        display: flex;
+        outline: none;
+        justify-items: center;
+    }
+    a.footerHomeLink
+    {
+        margin-left: 2vw;
+        text-decoration-line: none;
+        color: white;
+        font-size: 1.5vw;
+    }
+    a.footerHomeLink:link,
+    a.footerHomeLink:visited
+    {
+        text-decoration-line: none;
+        color: white;
+    }
+    img.footerImage
+    {
+        width: 5vw;
+        height: 5vw;
+        margin-left: 2vw;
+        text-decoration-line: none;
+    }
+    #footerCopyright
+    {
+        color: white;
+        margin-left: 2vw;
+        font-size: 1.5vw;
+    }
+}
+
+/*smaller than ipad portrait screen overrides (1px smaller than ipad mini on both dimensions)*/
+@media (max-height: 1023px) and (orientation: portrait)
+{
+    /*navbar overrides*/
+    nav.navbar
+    {
+        position: sticky;
+        width: 100%;
+        height: 8vh;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        outline: none;
+        z-index: 20;
+    }
+    a.navbarHeader
+    {
+        font-family: "Times New Roman", serif;
+        font-size: 3vh;
+        margin-left: 1vw;
+        margin-right: 0.5vw;
+        text-decoration-line: none;
+        display: flex;
+    }
+    #ChannelLogo
+    {
+        width: 8vw;
+        height: 8vh;
+        border-radius: 60%;
+        filter: brightness(300%);
+    }
+    #ChannelLogo:hover
+    {
+        transform: scale(1.0);
+        filter: brightness(500%);
+        transition: 1s;
+    }
+    #ChannelName
+    {
+        margin-left: 2vw;
+        padding-top: 0.75vh;
+    }
+    #ChannelName:hover
+    {
+        transform: scale(1.0);
+        transition: 1s;
+    }
+    button.navbarButton
+    {
+        font-family: "Times New Roman", serif;
+        font-size: 3vw;
+        margin-left: 0.33vw;
+        margin-bottom: -1.37vh;
+        padding-top: 1.37vh;
+        padding-bottom: 1.37vh;
+        padding-right: 0.52vw;
+        padding-left: 0.52vw;
+    }
+    .navbarButtons
+    {
+        gap: 1.63vw;
+        margin-right: 1.63vw;
+    }
+    .dropdown
+    {
+        position: relative;
+        justify-self: right;
+        display: inline-block;
+    }
+
+    .AboutMain
+    {
+        margin-top: -3.5vh;
+        background-color: #fefefe;
+        background-image: url('Images/backgroundTexture.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+    }
+
+    /*home page overrides*/
+    .HomeContentHeader
+    {
+        color: #fefefe;
+        font-size: 2.5vw;
+        font-family: Calibri, sans-serif;
+        font-weight: bold;
+        justify-self: center;
+        text-align: center;
+    }
+    .HomeContentButton
+    {
+        justify-self: center;
+        color: black;
+        font-size: 1.25vh;
+        font-family: Calibri, sans-serif;
+        font-weight: normal;
+        transition-duration: 0.2s;
+    }
+    .HomeContentButton:hover
+    {
+        background-color: lightgray;
+        transform: scale(1.0);
+    }
+    .HomeContentFooter
+    {
+        margin-top: 5vh;
+    }
+    .HomeFooterImage
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        margin-left: 1.63vw;
+    }
+    .HomeFooterImage_logo
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        filter: brightness(300%);
+        margin-left: 1.63vw;
+    }
+
+    /*about page override*/
+    h2.SegmentHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 3vh;
+        font-family: Calibri, sans-serif;
+        margin-top: 2vh;
+        text-align: center;
+    }
+    .SegmentInformation
+    {
+        justify-self: center;
+        text-align: center;
+        margin-left: 6vh;
+        margin-right: 6vh;
+        color: black;
+        font-weight: normal;
+        font-size: 1.7vh;
+        font-family: Calibri, sans-serif;
+    }
+    ol.SegmentInformation
+    {
+        padding-left: 7vh;
+        list-style: square;
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .Language
+    {
+        font-size: 1.5vh;
+    }
+
+    /*project page overrides*/
+    .PageHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 5vh;
+        font-family: Calibri, sans-serif;
+        padding-top: 5vw;
+    }
+    .ProjectHeader
+    {
+        color: black;
+        font-size: 3vh;
+        margin-left: 4vh;
+        margin-right: 4vh;
+        font-family: Calibri, sans-serif;
+        font-weight: bold;
+        align-self: center;
+        text-align: center;
+    }
+    .ProjectDescription
+    {
+        color: black;
+        font-size: 2vh;
+        font-family: Calibri, sans-serif;
+        font-weight: normal;
+        align-self: center;
+        margin-left: 3vh;
+        margin-right: 3vh;
+        text-indent: 3rem;
+        text-align: center;
+    }
+
+    /*footer override*/
+    footer.footer
+    {
+        position: static;
+        width: 100%;
+        height: 9vh;
+        align-content: center;
+        display: flex;
+        outline: none;
+        justify-items: center;
+    }
+    a.footerHomeLink
+    {
+        margin-left: 2vw;
+        text-decoration-line: none;
+        color: white;
+        font-size: 1vh;
+    }
+    a.footerHomeLink:link,
+    a.footerHomeLink:visited
+    {
+        text-decoration-line: none;
+        color: white;
+    }
+    img.footerImage
+    {
+        width: 5vh;
+        height: 5vh;
+        margin-left: 2vw;
+        text-decoration-line: none;
+    }
+    #footerCopyright
+    {
+        color: white;
+        margin-left: 2vw;
+        font-size: 1vh;
+    }
 }
