@@ -1152,6 +1152,12 @@ body.HomeBody
         font-weight: normal;
         transition-duration: 0.2s;
     }
+    .HomeContentLink
+    {
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
     .HomeContentButton:hover
     {
         background-color: lightgray;
