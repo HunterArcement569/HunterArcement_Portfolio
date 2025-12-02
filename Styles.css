@@ -672,6 +672,29 @@ body.HomeBody
         margin-left: 2vw;
         font-size: 2vw;
     }
+
+    /*home page overrides*/
+    body.HomeBody
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .HomeImageDiv
+    {
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        background-position: top center;
+    }
+    .HomeContentDiv
+    {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /*ipad landscape screen overrides*/
