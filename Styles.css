@@ -1293,3 +1293,64 @@ body.HomeBody
         font-size: 1vh;
     }
 }
+
+@supports (-webkit-touch-callout: none) {
+
+    /* Fix Safari's flexbox + 100vh alignment bug */
+    body.HomeBody {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;      /* force two-column desktop style */
+        justify-content: center;  /* keeps right column centered horizontally */
+        align-items: center;      /* centers right column vertically */
+    }
+
+    .HomeImageDiv {
+        width: 32.29vw;
+        height: 100vh;
+        flex-shrink: 0;
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+
+    .HomeContentDiv {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  /* vertical centering of all content */
+        align-items: center;      /* horizontal centering */
+        overflow-y: auto;
+    }
+}
+@supports (-webkit-overflow-scrolling: touch) {
+
+    /* Fix the iOS 'vh' bug caused by dynamic address bar */
+    body.HomeBody {
+        height: 100dvh; /* dynamic viewport height */
+    }
+
+    .HomeImageDiv {
+        background-size: cover; /* better appearance on very small screens */
+    }
+}
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 380px) {
+
+        /* Ensure the layout never collapses into vertical stacking */
+        body.HomeBody {
+            flex-direction: row !important;
+        }
+
+        .HomeImageDiv {
+            width: 40vw;       /* slightly larger so content doesn't crush */
+        }
+
+        .HomeContentDiv {
+            width: 60vw;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+}
