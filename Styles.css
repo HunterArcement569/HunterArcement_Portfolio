@@ -282,10 +282,12 @@ body.HomeBody
 .HomeContentDiv
 {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     flex: 1;
     padding: 0;
     overflow-y: auto;
-    justify-items: center;
+    justify-content: center;
     align-content: center;
 }
 .HomeHeader
@@ -295,6 +297,7 @@ body.HomeBody
     font-family: Calibri, sans-serif;
     font-weight: bold;
     justify-self: center;
+    align-self: center;
     transition-duration: 1s;
 }
 .HomeHeader:hover
