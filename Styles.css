@@ -315,10 +315,12 @@ body.HomeBody
 {
     align-self: center;
     justify-self: center;
+    text-align: center;
 }
 .HomeContentButton
 {
     justify-self: center;
+    align-self: center;
     color: black;
     font-size: 1.25rem;
     font-family: Calibri, sans-serif;
