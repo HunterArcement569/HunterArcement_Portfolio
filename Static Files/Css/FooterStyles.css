@@ -1,0 +1,204 @@
+/* footer base styles from legacy Styles.css */
+footer.footer
+{
+    position: static;
+    background: linear-gradient(90deg, darkgreen, black);
+    width: 100%;
+    height: 17.12vh;
+    align-items: center;
+    display: flex;
+    outline: none;
+    justify-items: center;
+}
+a.footerHomeLink
+{
+    margin-left: 3.26vw;
+    text-decoration-line: underline;
+    color: white;
+}
+a.footerHomeLink:link
+{
+    text-decoration-line: underline;
+    color: white;
+}
+a.footerHomeLink:visited
+{
+    text-decoration-line: none;
+    color: white;
+}
+img.footerImage
+{
+    width: 4.88vw;
+    height: 10.27vh;
+    margin-left: 3.26vw;
+    text-decoration-line: none;
+}
+#footerCopyright
+{
+    color: white;
+    margin-left: 3.26vw;
+}
+
+/* portrait footer overrides */
+@media (orientation: portrait)
+{
+    footer.footer
+    {
+        position: static;
+        width: 100%;
+        height: 12vh;
+        align-items: center;
+        display: flex;
+        outline: none;
+        justify-items: center;
+    }
+    a.footerHomeLink
+    {
+        margin-left: 2vw;
+        text-decoration-line: none;
+        color: white;
+        font-size: 2vw;
+    }
+    a.footerHomeLink:link,
+    a.footerHomeLink:visited
+    {
+        text-decoration-line: none;
+        color: white;
+    }
+    img.footerImage
+    {
+        width: 6vw;
+        height: 6vw;
+        margin-left: 2vw;
+        text-decoration-line: none;
+    }
+    #footerCopyright
+    {
+        color: white;
+        margin-left: 2vw;
+        font-size: 2vw;
+    }
+}
+
+/* iPad landscape footer overrides */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape)
+{
+    footer.footer
+    {
+        position: static;
+        width: 100%;
+        height: 12vh;
+        align-items: center;
+        display: flex;
+        outline: none;
+        justify-items: center;
+    }
+    a.footerHomeLink
+    {
+        margin-left: 2vw;
+        text-decoration-line: none;
+        color: white;
+        font-size: 1.2vw;
+    }
+    a.footerHomeLink:link,
+    a.footerHomeLink:visited
+    {
+        text-decoration-line: none;
+        color: white;
+    }
+    img.footerImage
+    {
+        width: 6vw;
+        height: 6vw;
+        margin-left: 2vw;
+        text-decoration-line: none;
+    }
+    #footerCopyright
+    {
+        color: white;
+        margin-left: 2vw;
+        font-size: 1.2vw;
+    }
+}
+
+/* smaller than iPad landscape footer overrides */
+@media (max-width: 1023px) and (orientation: landscape)
+{
+    footer.footer
+    {
+        position: static;
+        width: 100%;
+        height: 18vh;
+        align-items: center;
+        display: flex;
+        outline: none;
+        justify-items: center;
+    }
+    a.footerHomeLink
+    {
+        margin-left: 2vw;
+        text-decoration-line: none;
+        color: white;
+        font-size: 1.5vw;
+    }
+    a.footerHomeLink:link,
+    a.footerHomeLink:visited
+    {
+        text-decoration-line: none;
+        color: white;
+    }
+    img.footerImage
+    {
+        width: 5vw;
+        height: 5vw;
+        margin-left: 2vw;
+        text-decoration-line: none;
+    }
+    #footerCopyright
+    {
+        color: white;
+        margin-left: 2vw;
+        font-size: 1.5vw;
+    }
+}
+
+/* smaller than iPad portrait footer overrides */
+@media (max-height: 1023px) and (orientation: portrait)
+{
+    footer.footer
+    {
+        position: static;
+        width: 100%;
+        height: 9vh;
+        align-content: center;
+        display: flex;
+        outline: none;
+        justify-items: center;
+    }
+    a.footerHomeLink
+    {
+        margin-left: 2vw;
+        text-decoration-line: none;
+        color: white;
+        font-size: 1vh;
+    }
+    a.footerHomeLink:link,
+    a.footerHomeLink:visited
+    {
+        text-decoration-line: none;
+        color: white;
+    }
+    img.footerImage
+    {
+        width: 5vh;
+        height: 5vh;
+        margin-left: 2vw;
+        text-decoration-line: none;
+    }
+    #footerCopyright
+    {
+        color: white;
+        margin-left: 2vw;
+        font-size: 1vh;
+    }
+}

@@ -1,0 +1,312 @@
+/* home page base styles from legacy Styles.css */
+body.HomeBody
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+.HomeImageDiv
+{
+    background-image: url("../Images/Hunter HS Grad Pic.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 100vh;
+    width: 32.29vw;
+    flex-shrink: 0;
+}
+.HomeContentDiv
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+.HomeHeader
+{
+    color: palegreen;
+    font-size: 4vw;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    transition-duration: 1s;
+}
+.HomeHeader:hover
+{
+    color: greenyellow;
+    transform: scale(1.3);
+}
+.HomeContentHeader
+{
+    color: #fefefe;
+    font-size: 2.5vw;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    justify-self: center;
+    text-align: center;
+}
+.HomeContentLink
+{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.HomeContentButton
+{
+    justify-self: center;
+    align-self: center;
+    color: black;
+    font-size: 1.25rem;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    transition-duration: 0.2s;
+}
+.HomeContentButton:hover
+{
+    background-color: lightgray;
+    transform: scale(1.2);
+}
+.HomeContentFooter
+{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+.HomeFooterImage
+{
+    width: 6.51vw;
+    height: 13.7vh;
+    border-radius: 60%;
+    margin-left: 1.63vw;
+}
+.HomeFooterImage:hover
+{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+.HomeFooterImage_logo
+{
+    width: 6.51vw;
+    height: 13.7vh;
+    border-radius: 60%;
+    filter: brightness(300%);
+    margin-left: 1.63vw;
+}
+.HomeFooterImage_logo:hover
+{
+    filter: brightness(500%);
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+/* portrait overrides for home page */
+@media (orientation: portrait)
+{
+    .HomeContentHeader
+    {
+        color: #fefefe;
+        font-size: 2.5vw;
+        font-family: Calibri, sans-serif;
+        font-weight: bold;
+        justify-self: center;
+        text-align: center;
+    }
+    .HomeFooterImage
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        margin-left: 1.63vw;
+    }
+    .HomeFooterImage_logo
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        filter: brightness(300%);
+        margin-left: 1.63vw;
+    }
+}
+
+/* iPad landscape home overrides */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape)
+{
+    .HomeContentHeader
+    {
+        color: #fefefe;
+        font-size: 2.5vw;
+        font-family: Calibri, sans-serif;
+        font-weight: bold;
+        justify-self: center;
+        text-align: center;
+    }
+    .HomeFooterImage
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        margin-left: 1.63vw;
+    }
+    .HomeFooterImage_logo
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        filter: brightness(300%);
+        margin-left: 1.63vw;
+    }
+}
+
+/* smaller than iPad landscape home overrides */
+@media (max-width: 1023px) and (orientation: landscape)
+{
+    .HomeContentHeader
+    {
+        color: #fefefe;
+        font-size: 2.5vw;
+        font-family: Calibri, sans-serif;
+        font-weight: bold;
+        justify-self: center;
+        text-align: center;
+    }
+    .HomeFooterImage
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        margin-left: 1.63vw;
+    }
+    .HomeFooterImage_logo
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        filter: brightness(300%);
+        margin-left: 1.63vw;
+    }
+}
+
+/* smaller than iPad portrait home overrides */
+@media (max-height: 1023px) and (orientation: portrait)
+{
+    .HomeContentHeader
+    {
+        color: #fefefe;
+        font-size: 2.5vw;
+        font-family: Calibri, sans-serif;
+        font-weight: bold;
+        justify-self: center;
+        text-align: center;
+    }
+    .HomeContentButton
+    {
+        justify-self: center;
+        color: black;
+        font-size: 1.25vh;
+        font-family: Calibri, sans-serif;
+        font-weight: normal;
+        transition-duration: 0.2s;
+    }
+    .HomeContentLink
+    {
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+    .HomeContentButton:hover
+    {
+        background-color: lightgray;
+        transform: scale(1.0);
+    }
+    .HomeContentFooter
+    {
+        margin-top: 5vh;
+    }
+    .HomeFooterImage
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        margin-left: 1.63vw;
+    }
+    .HomeFooterImage_logo
+    {
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 60%;
+        filter: brightness(300%);
+        margin-left: 1.63vw;
+    }
+}
+
+/* Safari-specific home layout fixes */
+@supports (-webkit-touch-callout: none) {
+
+    /* Fix Safari's flexbox + 100vh alignment bug */
+    body.HomeBody {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;      /* force two-column desktop style */
+        justify-content: center;  /* keeps right column centered horizontally */
+        align-items: center;      /* centers right column vertically */
+    }
+
+    .HomeImageDiv {
+        width: 32.29vw;
+        height: 100vh;
+        flex-shrink: 0;
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+
+    .HomeContentDiv {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  /* vertical centering of all content */
+        align-items: center;      /* horizontal centering */
+        overflow-y: auto;
+    }
+}
+@supports (-webkit-overflow-scrolling: touch) {
+
+    /* Fix the iOS 'vh' bug caused by dynamic address bar */
+    body.HomeBody {
+        height: 100dvh; /* dynamic viewport height */
+    }
+
+    .HomeImageDiv {
+        background-size: cover; /* better appearance on very small screens */
+    }
+}
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 380px) {
+
+        /* Ensure the layout never collapses into vertical stacking */
+        body.HomeBody {
+            flex-direction: row !important;
+        }
+
+        .HomeImageDiv {
+            width: 40vw;       /* slightly larger so content doesn't crush */
+        }
+
+        .HomeContentDiv {
+            width: 60vw;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+}
