@@ -1,0 +1,248 @@
+/* shared main container background for projects page */
+.AboutMain
+{
+    margin: 0;
+    background-color: #fefefe;
+    background-image: url('../Images/backgroundTexture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+/* projects page base styles from legacy Styles.css */
+.PageHeader
+{
+    justify-self: center;
+    color: black;
+    font-weight: bold;
+    font-size: 5vw;
+    font-family: Calibri, sans-serif;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 15px;
+}
+.FilterHeader
+{
+    color: black;
+    font-size: 2.5rem;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+}
+.FilterSegments
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.FilterSubmit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.SpaceSegment
+{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    align-items: center;
+}
+.ProjectTypeSegments
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: start;
+}
+.ProjectLanguageSegments
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: end;
+}
+.ProjectFilter
+{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+.FilterLabel
+{
+    color: black;
+    font-size: 1.42rem;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    margin-top: -0.25rem;
+}
+.Filter
+{
+    width: 1.5em;
+    height: 1.5em;
+    transition-duration: 0.2s;
+}
+.Filter:hover
+{
+    transform: scale(1.25);
+}
+.FilterSubmitButton
+{
+    color: black;
+    background-color: lightgray;
+    transition-duration: 0.2s;
+    font-size: 1.08rem;
+}
+.FilterSubmitButton:hover
+{
+    background-color: grey;
+    transform: scale(1.25);
+}
+.ContentSegments
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ProjectHeader
+{
+    color: black;
+    font-size: 2.5rem;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    align-self: center;
+}
+.ProjectDescription
+{
+    color: black;
+    font-size: 2vw;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    align-self: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-indent: 3rem;
+    text-align: center;
+}
+.ProjectLink:link
+{
+    color: grey;
+    font-size: 1.17rem;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    text-decoration-line: none;
+    align-self: center;
+}
+.ProjectLink:visited
+{
+    color: black;
+    font-size: 1.25rem;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    text-decoration-line: none;
+    align-self: center;
+}
+
+/* iPad landscape project overrides */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape)
+{
+    .PageHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 5vw;
+        font-family: Calibri, sans-serif;
+        margin-top: 0;
+    }
+    .ProjectDescription
+    {
+        color: black;
+        font-size: 2vw;
+        font-family: Calibri, sans-serif;
+        font-weight: normal;
+        align-self: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-indent: 3rem;
+        text-align: center;
+    }
+}
+
+/* smaller than iPad landscape project overrides */
+@media (max-width: 1023px) and (orientation: landscape)
+{
+    .PageHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 5vw;
+        font-family: Calibri, sans-serif;
+        padding-top: 0;
+    }
+    .ProjectDescription
+    {
+        color: black;
+        font-size: 2vw;
+        font-family: Calibri, sans-serif;
+        font-weight: normal;
+        align-self: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-indent: 3rem;
+        text-align: center;
+    }
+}
+
+/* smaller than iPad portrait project overrides */
+@media (max-height: 1023px) and (orientation: portrait)
+{
+    .AboutMain
+    {
+        margin-top: 0;
+        background-color: #fefefe;
+        background-image: url('../Images/backgroundTexture.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+    }
+
+    .PageHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 5vh;
+        font-family: Calibri, sans-serif;
+        padding-top: 0;
+    }
+    .ProjectHeader
+    {
+        color: black;
+        font-size: 3vh;
+        margin-left: 4vh;
+        margin-right: 4vh;
+        font-family: Calibri, sans-serif;
+        font-weight: bold;
+        align-self: center;
+        text-align: center;
+    }
+    .ProjectDescription
+    {
+        color: black;
+        font-size: 2vh;
+        font-family: Calibri, sans-serif;
+        font-weight: normal;
+        align-self: center;
+        margin-left: 3vh;
+        margin-right: 3vh;
+        text-indent: 3rem;
+        text-align: center;
+    }
+}

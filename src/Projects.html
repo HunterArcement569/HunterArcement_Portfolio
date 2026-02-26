@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <script src="Logic.js"></script>
-    <link rel="stylesheet" href="Styles.css">
+    <script type="module" src="../Static%20Files/Js/ProjectsLogic.js"></script>
+    <link rel="stylesheet" href="../Static%20Files/Css/NavbarStyles.css">
+    <link rel="stylesheet" href="../Static%20Files/Css/FooterStyles.css">
+    <link rel="stylesheet" href="../Static%20Files/Css/ProjectStyles.css">
 </head>
 
 <body>
     <!--section for the navigation bar (navbar)-->
     <nav role="navigation" class="navbar" id="PageTop">
-        <a href="index.html" class="navbarHeader">
+        <a href="../index.html" class="navbarHeader">
             <p id="ChannelName"><b>Hunter Arcement</b></p>
         </a>
 
@@ -126,7 +128,7 @@
             </div>
 
         </div>
-        <div class="FilterSubmit"><button class="FilterSubmitButton" onclick="FilterVideos()">Filter Projects</button></div>
+        <div class="FilterSubmit"><button class="FilterSubmitButton" id="FilterButton">Filter Projects</button></div>
 
         <!--content section-->
         <div class="ContentSegments" id="ContentSegments">
@@ -134,7 +136,9 @@
         </div>
 
         <!--force the projects all to load by default (either page load or reload)-->
-        <script>
+        <script type="module">
+            import { FilterVideos } from "../Static Files/Js/ProjectsLogic.js";
+            document.getElementById("FilterButton").addEventListener("click", FilterVideos);
             FilterVideos();
         </script>
 
@@ -144,13 +148,13 @@
 
     <!--section for the bottom footer content of the page-->
     <footer class="footer">
-        <a href="index.html" class="footerHomeLink">Home</a>
+        <a href="../index.html" class="footerHomeLink">Home</a>
         <a href="#PageTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" class="footerHomeLink">Return to the Top of the Page</a>
         <a href="https://www.youtube.com/channel/UCbKlNm4xa34uEjZrPKJBRsQ" class="footerHomeLink">
-            <img src="Images/YouTube%20Logo.jpg" alt="Link to my YouTube Channel" class="footerImage">
+            <img src="../Static%20Files/Images/YouTube%20Logo.jpg" alt="Link to my YouTube Channel" class="footerImage">
         </a>
         <a href="https://www.linkedin.com/in/hunter-arcement-a67104280"  class="footerHomeLink">
-            <img src="Images/LinkedIn%20Logo.jpg" alt="Link to my LinkedIn Page (Business Inquiries Only)" class="footerImage">
+            <img src="../Static%20Files/Images/LinkedIn%20Logo.jpg" alt="Link to my LinkedIn Page (Business Inquiries Only)" class="footerImage">
         </a>
 
         <a href="https://hunterarcement569.github.io/GameHacker569_Website/" target="_blank" class="footerHomeLink">YouTube Channel Website</a>

@@ -1,0 +1,286 @@
+/* about page base styles from legacy Styles.css */
+.AboutMain
+{
+    margin: 0;
+    background-color: #fefefe;
+    background-image: url('../Images/backgroundTexture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.PageHeader
+{
+    justify-self: center;
+    color: black;
+    font-weight: bold;
+    font-size: 5vw;
+    font-family: Calibri, sans-serif;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 15px;
+}
+.Segments
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.SegmentHeader
+{
+    justify-self: center;
+    color: black;
+    font-weight: bold;
+    font-size: 3.3vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    font-family: Calibri, sans-serif;
+    margin-bottom: -2rem;
+    text-align: center;
+}
+#Profession,#ResumeLink
+{
+    margin-bottom: 0;
+}
+.SegmentInformation
+{
+    justify-self: center;
+    text-align: center;
+    margin-left: 6vw;
+    margin-right: 4vw;
+    color: black;
+    font-weight: normal;
+    font-size: 1.5vw;
+    font-family: Calibri, sans-serif;
+    text-indent: -5vw;
+}
+li
+{
+    justify-self: center;
+    text-align: center;
+}
+ol.SegmentInformation
+{
+    padding-left: 7vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    list-style: square;
+    justify-self: center;
+    justify-items: center;
+    text-indent: -5vw;
+    text-align: center;
+}
+.EmploymentDurationList
+{
+    justify-self: center;
+    text-align: center;
+    list-style: none;
+}
+.EmploymentDuration
+{
+    justify-self: center;
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    font-size: 1.25rem;
+    font-family: Calibri, sans-serif;
+}
+.ProgrammingList
+{
+    justify-self: left;
+    text-align: left;
+    list-style: disc;
+}
+.Language
+{
+    justify-self: left;
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    font-size: 1.33rem;
+    font-family: Calibri, sans-serif;
+    text-indent: -0.5em;
+}
+.ExternalLink:link
+{
+    text-decoration: underline;
+    color: black;
+}
+.ExternalLink:visited
+{
+    text-decoration: underline;
+    color: black;
+}
+.ResumeLink
+{
+    margin-bottom: 2rem;
+}
+.ResumeButton
+{
+    justify-self: center;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    color: black;
+    font-weight: normal;
+    font-size: 1rem;
+    font-family: Calibri, sans-serif;
+    transition-duration: 0.2s;
+}
+.ResumeButton:hover
+{
+    transform: scale(1.25);
+    background-color: grey;
+}
+
+/* portrait overrides for about page */
+@media (orientation: portrait)
+{
+    h2.SegmentHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 3vw;
+        font-family: Calibri, sans-serif;
+        margin-bottom: -2vw;
+        text-align: center;
+    }
+    .SegmentInformation
+    {
+        justify-self: center;
+        text-align: center;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        color: black;
+        font-weight: normal;
+        font-size: 2.2vw;
+        font-family: Calibri, sans-serif;
+    }
+    ol.SegmentInformation
+    {
+        padding-left: 7vw;
+        list-style: square;
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+/* iPad landscape about overrides */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape)
+{
+    h2.SegmentHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 3vw;
+        font-family: Calibri, sans-serif;
+        margin-bottom: -2vw;
+        text-align: center;
+    }
+    .SegmentInformation
+    {
+        justify-self: center;
+        text-align: center;
+        margin-left: 12vh;
+        margin-right: 12vh;
+        color: black;
+        font-weight: normal;
+        font-size: 2.2vw;
+        font-family: Calibri, sans-serif;
+    }
+    ol.SegmentInformation
+    {
+        padding-left: 7vw;
+        list-style: square;
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+/* smaller than iPad landscape about overrides */
+@media (max-width: 1023px) and (orientation: landscape)
+{
+    h2.SegmentHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 3vw;
+        font-family: Calibri, sans-serif;
+        margin-bottom: -2vw;
+        text-align: center;
+    }
+    .SegmentInformation
+    {
+        justify-self: center;
+        text-align: center;
+        margin-left: 12vh;
+        margin-right: 12vh;
+        color: black;
+        font-weight: normal;
+        font-size: 2.2vw;
+        font-family: Calibri, sans-serif;
+    }
+    ol.SegmentInformation
+    {
+        padding-left: 7vw;
+        list-style: square;
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+/* smaller than iPad portrait about overrides */
+@media (max-height: 1023px) and (orientation: portrait)
+{
+    .AboutMain
+    {
+        margin-top: -3.5vh;
+        background-color: #fefefe;
+        background-image: url('../Images/backgroundTexture.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+    }
+
+    h2.SegmentHeader
+    {
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        font-size: 3vh;
+        font-family: Calibri, sans-serif;
+        margin-top: 2vh;
+        text-align: center;
+    }
+    .SegmentInformation
+    {
+        justify-self: center;
+        text-align: center;
+        margin-left: 6vh;
+        margin-right: 6vh;
+        color: black;
+        font-weight: normal;
+        font-size: 1.7vh;
+        font-family: Calibri, sans-serif;
+    }
+    ol.SegmentInformation
+    {
+        padding-left: 7vh;
+        list-style: square;
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .Language
+    {
+        font-size: 1.5vh;
+    }
+}
