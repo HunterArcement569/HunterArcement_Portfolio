@@ -96,5 +96,13 @@ export const Projects =
         new Project("Electric Marimba Company -- Spring Boot", "Java",
             ["User Interfaces", "Web Development", "Databases"],
             ["This project was a way for me to learn a new server/web development framework -- Spring Boot. This is a Java-based framework very similar to Django from Python as well as WPF and Blazor from C#. I also learned about Docker containing/imaging/distributing."],
-            "https://www.youtube.com/embed/ZSsaJQfseMw?si=2HOQ3NGEuNBRTM51", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Java/JavaHome.html#JavaSprintBoot_1")
+            "https://www.youtube.com/embed/ZSsaJQfseMw?si=2HOQ3NGEuNBRTM51", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Java/JavaHome.html#JavaSprintBoot_1"),
+        new Project("Acronacronym", "Unity",
+            ["User Interfaces", "Game Development", "Other"],
+            ["This project was done for a class in college (Parallel & Distributed Computing], and focuses more on the multiplayer aspect of Unity game development. We started on this originally with a different technical stack and switch to Unity with approx. 2 months remaining to wrap it up. Many lessons learned through this project were use of NetworkVariables, Client RPC's, Server RPC's, Network Race Conditions, and Synchronization"],
+            "", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Unity/UnityHome.html#Acronacronym"),
+        new Project("Project - T", "Unity",
+            ["User Interfaces", "Game Development", "Other"],
+            ["My final college semester's Senior Project, this one was the pioneer for me learning multiplayer systems in Unity, and is what walked so Acronacronym could run a few months later. There are still some bugs, and things left untested, however I am proud that the majority of my vision for this game was executed.", "In terms of what did not make the cut: splitscreen and neural network bosses trained with the Reinforcement Learning algorithm, PPO [Proximal Policy Optimisation], its fair to say despite being inspired by a game made for the Nintendo Wii, this was ambitious and delivered on much of what was set out for it. Clients may experience some weirdness due to lag, improvements in future projects will be based on the mistakes made during the development of Project - T."],
+            "", "https://hunterarcement569.github.io/GameHacker569_Website/Programming/Unity/UnityHome.html#ProjectT")
     ];

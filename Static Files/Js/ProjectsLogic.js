@@ -78,14 +78,17 @@ export function FilterVideos()
             parent.appendChild(description);
         });
 
-        const ytLink = document.createElement("a");
-        ytLink.className = "ProjectLink";
-        ytLink.href = project.ProjectLink;
-        ytLink.target = "_blank";
-        ytLink.textContent = "Link to the Project's YouTube Video";
-        parent.appendChild(ytLink);
+        if(project.ProjectLink !== "")
+        {
+            const ytLink = document.createElement("a");
+            ytLink.className = "ProjectLink";
+            ytLink.href = project.ProjectLink;
+            ytLink.target = "_blank";
+            ytLink.textContent = "Link to the Project's YouTube Video";
+            parent.appendChild(ytLink);
 
-        parent.appendChild(document.createElement("br"));
+            parent.appendChild(document.createElement("br"));
+        }
 
         const siteLink = document.createElement("a");
         siteLink.className = "ProjectLink";
